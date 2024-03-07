@@ -1,150 +1,392 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>AI Deployment</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <style>
-    #video-background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
-    .parallax {
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 100%;
-      width: 100%;
-    }
-    .section {
-      padding: 100px 0;
-      text-align: center;
-    }
-    .card {
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 40px;
-      border-radius: 20px;
-    }
-    .section-white {
-      background-color: rgba(0, 0, 0, 0.8);
-      color: #fff;
-    }
-    body {
-      padding-top: 80px;
-    }
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Data Science, Analytics, Data, sass, software company">
+		<meta name="description" content="ProfessAi - Data Science & Analytics HTML5 Template is designed especially for the agency, multipurpose and business and those who offer business-related services.">
+      	<meta property="og:site_name" content="ProfessAi">
+      	<meta property="og:url" content="https://www.professai.com/">
+      	<meta property="og:type" content="website">
+      	<meta property="og:title" content="ProfessAi - Data Science & Analytics HTML5 Template">
+		<!-- For IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- For Resposive Device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- For Window Tab Color -->
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#5465ff">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#5465ff">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#5465ff">
+		<title>ProfessAi - A.I. at the Edge</title>
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" sizes="56x56" href="images/logo/logo.png">
+		<!-- Main style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+		<!-- responsive style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all">
 
-  </style>
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#">
-        <img src="logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
-        <b style="font-size: 30px;">ProfessAi</b> <p style="font-size: 10px;">Elevating A.I. at Every Edge</p>
-      </a>
+		<!-- Fix Internet Explorer ______________________________________-->
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="vendor/html5shiv.js"></script>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->	
+	</head>
 
-      <!-- Hamburger Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+	<body>
+		<div class="main-page-wrapper">
+			<!-- ===================================================
+				Loading Transition
+			==================================================== -->
+			<section>
+				<div id="preloader">
+					<div id="ctn-preloader" class="ctn-preloader">
+						<div class="animation-preloader">
+							<div class="icon"><img src="images/logo/logo.png" alt="" class="m-auto d-block" width="38"></div>
+							<div class="txt-loading mt-2">
+								<span data-text-preloader="P" class="letters-loading">
+									P
+								</span>
+								<span data-text-preloader="R" class="letters-loading">
+									R
+								</span>
+								<span data-text-preloader="O" class="letters-loading">
+									O
+								</span>
+								<span data-text-preloader="F" class="letters-loading">
+									F
+								</span>
+								<span data-text-preloader="E" class="letters-loading">
+									E
+								</span>
+								<span data-text-preloader="S" class="letters-loading">
+									S
+								</span>
+								<span data-text-preloader="S" class="letters-loading">
+									S
+								</span>
+								<span data-text-preloader="A" class="letters-loading">
+									A
+								</span>
+								<span data-text-preloader="I" class="letters-loading">
+									I
+								</span>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</section>
 
-      <!-- Navbar Links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Our Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <!-- Video Background -->
-  <video autoplay muted loop id="video-background">
-    <source src="https://github.com/professai/static/raw/main/background.mp4" type="video/mp4">
-  </video>
+			<!-- 
+			=============================================
+				Theme Main Menu
+			============================================== 
+			-->
+			<header class="theme-main-menu sticky-menu theme-menu-two">
+				<div class="inner-content">
+					<div class="container d-flex align-items-center justify-content-between">
+						<a class="navbar-brand" href="#">
+							<img src="images/logo/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+							<b style="font-size: 25px;">ProfessAi</b>
+						</a>
+						<a href="mailto:contact@professai.com?subject=Website%20Contact" role="button" class="get-in-touch-btn d-none d-lg-block order-lg-3">Get In Touch</a>
+						<nav class="navbar navbar-expand-lg order-lg-2">
+							<button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						    	<span></span>
+						 	</button>
+						    <div class="collapse navbar-collapse" id="navbarNav">
+						    	<ul class="navbar-nav">
+						    		<li class="d-block d-lg-none"><div class="logo"><a href="#"><img src="images/logo/logo.png" alt="" width="50"></a></div></li>
+							        <li class="nav-item active">
+							        	<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-auto-close="outside" aria-expanded="false">Home</a>
+						            </li>
+									<li class="nav-item">
+									<a class="nav-link" href="#solutions" role="button" data-bs-auto-close="outside" aria-expanded="false">Solutions</a>
+									</li>
+									<li class="nav-item">
+									<a class="nav-link" href="#about" role="button" data-bs-auto-close="outside" aria-expanded="false">About Us</a>
+									</li>
+									<li class="nav-item">
+									<a class="nav-link" href="#expertise" role="button" data-bs-auto-close="outside" aria-expanded="false">Expertise</a>
+									</li>
+						    	</ul>
+						    	<!-- Mobile Content -->
+						    	<div class="mobile-content d-block d-lg-none">
+						    		<div class="d-flex flex-column align-items-center justify-content-center mt-70">
+						    			<a href="mailto:contact@professai.com?subject=Mobile%20Contact" class="get-in-touch-btn">Get In Touch</a>
+						    		</div>
+						    	</div> <!-- /.mobile-content -->
+						    </div>
+						</nav>
+					</div>
+				</div> <!-- /.inner-content -->
+			</header> <!-- /.theme-main-menu -->
 
-  <!-- Services -->
-  <section class="parallax"  id="services">
-    <div class="container section section-white">
-        <div class="row">
-            <div class="col-md-12">
-            <h1>Our Services</h1>
-            </div>
-            <div class="col-md-4">
-            <h3>Content Generation</h3>
-            <p>We can develop custom generative models that can generate new content, images, videos, and music.</p>
-            </div>
-            <div class="col-md-4">
-            <h3>Task Automation</h3>
-            <p>We can automate repetitive tasks and improve operational efficiency using AI.</p>
-            </div>
-            <div class="col-md-4">
-            <h3>A.I. chatbots in Airgapped Environments</h3>
-            <p>We can deploy AI-powered chatbots and personalization algorithms behind your corporate firewall or airgapped environment.</p>
-            </div>
-        </div>
-</div>
 
-  </section>
-  <!-- Team -->
-  <section class="parallax"  id="about">
-    <div class="container section section-white">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>About Us</h1>
-          <p>Our team of expert data scientists and AI engineers work closely with our clients to develop and deploy custom AI solutions.</p>
-        </div>
-        <div class="col-md-4">
-        <h3>Collin Paran</h3>
-        <p><b>Founder & A.I. Solutions Architect</b></p>
-        <p>Collin Paran is a seasoned professional with two decades of experience in web application delivery. His extensive background includes roles as a Senior Data Scientist and Manager in two Fortune 500 companies, where he demonstrated his ability to lead and innovate. Since 2014, Collin has been at the forefront of chat application development, and from 2016, he has specialized in building AI-based chat applications, showcasing his proficiency in integrating artificial intelligence with user-friendly interfaces. His expertise doesn't stop there; Collin also holds a deep understanding of Applied Mathematics and Advanced Statistics, which underpins his data-driven approach to problem-solving.</p>
-        </div>
-        <div class="col-md-4">
-        <h3>Mark Flint</h3>
-        <p><b>Founder & Chief Financial Officer</b></p>
-        <p>With over 10 years in the financial sector, Mark Flint brings a wealth of expertise to our startup, honed from owning his accounting firm and earning his stripes as a Certified Public Accountant (CPA). His previous engagements as a virtual CFO for multiple companies underscore his versatile financial acumen. Mark's entrepreneurial spirit and strategic approach promise robust financial leadership, steering our venture towards sustainable success. </p>
-        </div>
-        <div class="col-md-4">
-        <h3>Chris Woolley</h3>
-        <p><b>Founder & Chief Legal Officer</b></p>
-        <p>Chris Woolley is a seasoned Senior Data and Systems Engineer with a rich background in the aerospace industry and federal contracting space. With over seven years of experience in the aviation industry, Chris has honed his skills in the testing, analysis, and implementation of both manned and unmanned aircraft systems. Since 2020, he has been instrumental in building data pipelines for supervised and unsupervised models, demonstrating his proficiency in advanced data engineering. Beyond his technical expertise, Chris is also a certified lawyer, a member of the Virginia Bar, which adds a unique perspective to his problem-solving approach. </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Contact Us -->
-  <section class="parallax"  id="contact">
-    <div class="container section section-white">
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Contact Us</h2>
-            <a href="mailto:contact@professai.com?subject=Website%20Inquiry">contact@professai.com</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</body>
+			
+			<!-- 
+			=============================================
+				Theme Hero Banner
+			============================================== 
+			-->
+			<div class="hero-banner-two">
+				<div class="bg-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-xl-6 col-md-7">
+								<h1 class="hero-heading">A.I. at Every Edge</h1>
+					
+								<!--/ <ul class="style-none button-group d-sm-flex align-items-center">
+									<li><a class="demo-btn tran3s mt-10" href="mailto:contact@professai.com?subject=Demo%20Request">Request a demo</a></li>
+								</ul> -->
+							</div>
+						</div>
+					</div> <!-- /.container -->
+					<div class="illustration-holder">
+						<img src="images/assets/ils_04.svg" alt="" class="main-illustration w-100">
+						<img src="images/assets/ils_04_1.svg" alt="" class="shapes shape-one">
+						<img src="images/assets/ils_04_2.svg" alt="" class="shapes shape-two">
+						<img src="images/assets/ils_04_2.svg" alt="" class="shapes shape-three">
+						<img src="images/assets/ils_04_3.svg" alt="" class="shapes shape-four">
+						<img src="images/assets/ils_04_4.svg" alt="" class="shapes shape-five">
+						<img src="images/assets/ils_04_5.svg" alt="" class="shapes shape-six">
+						<img src="images/assets/ils_04_6.svg" alt="" class="shapes shape-seven">
+					</div> <!-- /.illustration-holder -->
+				</div> <!-- /.bg-wrapper -->
+			</div> <!-- /.hero-banner-two -->
+
+
+
+			<!--
+			=====================================================
+				Counter Section One
+			=====================================================
+			-->
+			<div class="counter-section-one fancy-bg">
+				<div class="container">
+					<div class="inner-container">
+						<div class="row justify-content-center">
+							<div class="col-md-4 col-sm-6" data-aos="fade-up">
+								<div class="counter-block-one text-center mb-20">
+									<div class="main-count"><span class="counter">35</span>%</div>
+									<p>Companies globally <br> use AI</p>
+								</div> <!-- /.counter-block-one -->
+							</div>
+							<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+								<div class="counter-block-one text-center mb-20">
+									<div class="main-count"><span class="counter">70.9</span>b+</div>
+									<p>Generated revenue per year by <br>AI Solutions</p>
+								</div> <!-- /.counter-block-one -->
+							</div>
+							<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+								<div class="counter-block-one text-center mb-20">
+									<div class="main-count"><span class="counter">40</span>%</div>
+									<p>Increased operational efficiency <br>due to AI</p>
+								</div> <!-- /.counter-block-one -->
+							</div>
+						</div>
+					</div> <!-- /.inner-container -->
+				</div>
+				<img src="images/shape/shape_04.svg" alt="" class="shapes shape-one">
+				<img src="images/shape/shape_05.svg" alt="" class="shapes shape-two">
+			</div> <!-- /.counter-section-one -->
+
+
+			<!-- 
+			=============================================
+				About Section
+			============================================== 
+			-->
+			<div id="about"></div>
+			<div class="fancy-feature-twentyTwo mt-150 lg-mt-60">
+				<div class="container">
+					<div class="row gx-xxl-5">
+						<div class="col-lg-4 col-sm-6 d-flex" data-aos="fade-up">
+							<div class="block-style-fourteen mt-35">
+								<h5>Our History</h5>
+								<p>Launched in 2018 by Collin Paran, ProfessAi has evolved from enhancing manufacturing and logistics efficiency with AI-powered sensors to serving diverse sectors including non-profits, accounting, government, education, and public health.</p>
+							</div> <!-- /.block-style-fourteen -->
+						</div>
+						<div class="col-lg-4 col-sm-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+							<div class="block-style-fourteen mt-35">
+								<h5>Our Mission</h5>
+								<p>ProfessAi's mission transcends traditional boundaries, aiming to empower a variety of industries with private and portable Artificial Intelligence. We innovate sensor technologies to streamline operations, drive sustainability, and promote efficiency across the board.</p>
+							</div> <!-- /.block-style-fourteen -->
+						</div>
+						<div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="200">
+							<div class="block-style-fourteen mt-35">
+								<h5>Our Vision</h5>
+								<p>We envision a world where human interaction with technology elevates beyond the confines of screens. ProfessAi leads the charge towards a future where smart AI integration enhances our lives, liberating us from the physical constraints of smartphones and laptops to focus on what truly matters.</p>
+							</div> <!-- /.block-style-fourteen -->
+						</div>
+					</div>
+				</div>
+			</div> <!-- /.fancy-feature-twentyTwo -->
+
+			<!--
+			=====================================================
+				Counter Section One
+			=====================================================
+			-->
+			<div class="counter-section-one">
+				<div class="inner-container bg-color style-two rounded-0 w-100">
+					<div class="container">
+						<div class="row justify-content-center">
+	
+						</div>
+					</div>
+					<img src="images/shape/shape_40.svg" alt="" class="shapes shape-three">
+					<img src="images/shape/shape_41.svg" alt="" class="shapes shape-four">
+				</div>  <!-- /.inner-container -->
+			</div> <!-- /.counter-section-one -->
+
+
+
+			<!-- 
+			=============================================
+				Solutions Section
+			============================================== 
+			-->
+			<div class="fancy-feature-four position-relative mt-110 lg-mt-50" id="expertise">
+				<div class="bg-wrapper">
+					<div class="inner-container">
+						<div class="container">
+							<div class="row gx-xxl-5">
+								<div class="col-lg-4 mt-40 d-flex" data-aos="fade-up">
+									<div class="d-flex justify-content-center flex-column">
+										<div class="title-style-one">
+											<div class="sc-title-three">Expertise</div>
+											<h2 class="main-title">Our experience</h2>
+										</div> <!-- /.title-style-one -->
+										<!-- / <div><div class="btn-three rev mt-35 lg-mt-20">For more details. <a href="service-V1.html">Click here <i class="fas fa-chevron-right"></i></a></div></div> /-->
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6 mt-40 d-flex" data-aos="fade-up" data-aos-delay="100">
+									<div class="block-style-four">
+										<div class="icon d-flex align-items-end justify-content-center"><img src="images/icon/icon_09.svg" alt=""></div>
+										<a href="service-V1.html"><h5>Tailored AI Innovations</h5></a>
+										<p>Elevate your competitive edge with portable, private AI solutions designed for unique, intelligent insights.</p>
+									</div> <!-- /.block-style-four -->
+								</div>
+								<div class="col-lg-4 col-sm-6 mt-40 d-flex" data-aos="fade-up" data-aos-delay="200">
+									<div class="block-style-four">
+										<div class="icon d-flex align-items-end justify-content-center"><img src="images/icon/icon_11.svg" alt=""></div>
+										<a href="service-V1.html"><h5>Data Mastery & Predictive Analytics</h5></a>
+										<p>Outpace disruption and surpass client expectations through advanced, timely data analytics for strategic decision-making.</p>
+									</div> <!-- /.block-style-four -->
+								</div>
+							</div>
+						</div>
+					</div> <!-- /.inner-container -->
+				</div> <!-- /.bg-wrapper -->
+				<img src="images/shape/shape_06.svg" alt="" class="shapes shape-one">
+				<img src="images/shape/shape_07.svg" alt="" class="shapes shape-two">
+			</div> <!-- /.fancy-feature-four -->
+			
+			<!-- 
+			=============================================
+				Benefits Section
+			============================================== 
+			-->
+			<div class="fancy-feature-five position-relative mt-50 xs-mt-20" id="solutions">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-xxl-4 col-lg-5 col-md-6">
+							<div class="block-style-two pt-60 md-pt-20" data-aos="fade-right">
+								<div class="title-style-one">
+									<div class="sc-title-three">Solutions</div>
+									<h2 class="main-title">Are you content with missing out on AI’s ability to revolutionize your industry? </h2>
+								</div> <!-- /.title-style-one -->
+								<p class="pt-10 pb-20 lg-pb-10">Let's lead together.</p>
+								<ul class="style-none list-item color-rev">
+									<li>Advanced AI-Driven Security: Leverages cutting-edge AI algorithms to bolster your data's privacy and security</li>
+									<li>AI-Enabled Operational Resilience: Utilizes intelligent AI systems to ensure your operations are robust and adaptable</li>
+									<li>Personalized AI Innovation: Harnesses the power of AI to craft solutions uniquely suited to your organization's challenges</li>
+								</ul>
+							</div> <!-- /.block-style-two -->
+						</div>
+
+						<div class="col-xxl-8 col-lg-7 col-md-6 text-end">
+							<div class="illustration-holder d-inline-block position-relative xs-mt-20">
+								<img src="images/assets/ils_06.svg" alt="" class="main-illustration w-100">
+								<img src="images/assets/ils_06_1.svg" alt="" class="shapes shape-one">
+								<img src="images/assets/ils_06_2.svg" alt="" class="shapes shape-two">
+								<img src="images/assets/ils_06_3.svg" alt="" class="shapes shape-three" data-aos="fade-down" data-aos-duration="1800">
+								<img src="images/assets/ils_06_4.svg" alt="" class="shapes shape-four" data-aos="fade-left" data-aos-duration="1800">
+								<img src="images/assets/ils_06_5.svg" alt="" class="shapes shape-five">
+							</div><!--  /.illustration-holder -->
+						</div>
+					</div>
+				</div> <!-- /.container -->
+			</div> <!-- /.fancy-feature-five -->
+		
+
+			<!--
+			=====================================================
+				Footer
+			=====================================================
+			-->
+			<div class="footer-style-two theme-basic-footer">
+				<img src="images/shape/shape_16.svg" alt="" class="shapes shape-one">
+				<img src="images/shape/shape_17.svg" alt="" class="shapes shape-two">
+				<div class="container">
+					<div class="inner-wrapper">
+						<div class="row">
+							<div class="col-lg-3 footer-intro mb-40">
+								<div class="logo"><a href="index.html"><img src="images/logo/logo.png" alt="" width="30"></a></div>
+								<p>Your Vision, Our AI Expertise: Together, We Achieve More.</p>
+								<ul class="d-flex social-icon style-none">
+									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="bottom-footer">
+							<div class="d-lg-flex justify-content-between align-items-center">
+								<ul class="order-lg-1 pb-15 d-flex justify-content-center footer-nav style-none">
+									<li><a href="#">Privacy &amp; Terms.</a></li>
+									<li><a href="#">FAQ</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+								<p class="copyright text-center order-lg-0 pb-15">Copyright @2024 ProfessAi LLC</p>
+							</div>
+						</div>
+					</div> <!-- /.inner-wrapper -->
+				</div>
+			</div> <!-- /.footer-style-two -->
+
+
+			<button class="scroll-top">
+				<i class="bi bi-arrow-up-short"></i>
+			</button>
+			
+			
+
+
+		<!-- Optional JavaScript _____________________________  -->
+
+    	<!-- jQuery first, then Bootstrap JS -->
+    	<!-- jQuery -->
+		<script src="vendor/jquery.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<!-- AOS js -->
+		<script src="vendor/aos-next/dist/aos.js"></script>
+		<!-- Slick Slider -->
+		<script src="vendor/slick/slick.min.js"></script>
+		<!-- js Counter -->
+		<script src="vendor/jquery.counterup.min.js"></script>
+		<script src="vendor/jquery.waypoints.min.js"></script>
+		<!-- Fancybox -->
+		<script src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+		<!-- Progress Bar js -->
+		<script src="vendor/skills-master/jquery.skills.js"></script>
+
+		<!-- Theme js -->
+		<script src="js/theme.js"></script>
+		</div> <!-- /.main-page-wrapper -->
+	</body>
 </html>
-
-
-
-

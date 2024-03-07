@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AI Deployment</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    #video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .parallax {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+    .section {
+      padding: 100px 0;
+      text-align: center;
+    }
+    .card {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 20px;
+    }
+    .section-white {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+    }
+    body {
+      padding-top: 80px;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+        <b style="font-size: 30px;">ProfessAi</b> <p style="font-size: 10px;">Elevating A.I. at Every Edge</p>
+      </a>
+
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Video Background -->
+  <video autoplay muted loop id="video-background">
+    <source src="https://github.com/professai/static/raw/main/background.mp4" type="video/mp4">
+  </video>
+
+  <!-- Services -->
+  <section class="parallax"  id="services">
+    <div class="container section section-white">
+        <div class="row">
+            <div class="col-md-12">
+            <h1>Our Services</h1>
+            </div>
+            <div class="col-md-4">
+            <h3>Content Generation</h3>
+            <p>We can develop custom generative models that can generate new content, images, videos, and music.</p>
+            </div>
+            <div class="col-md-4">
+            <h3>Task Automation</h3>
+            <p>We can automate repetitive tasks and improve operational efficiency using AI.</p>
+            </div>
+            <div class="col-md-4">
+            <h3>A.I. chatbots in Airgapped Environments</h3>
+            <p>We can deploy AI-powered chatbots and personalization algorithms behind your corporate firewall or airgapped environment.</p>
+            </div>
+        </div>
+</div>
+
+  </section>
+  <!-- Team -->
+  <section class="parallax"  id="about">
+    <div class="container section section-white">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>About Us</h1>
+          <p>Our team of expert data scientists and AI engineers work closely with our clients to develop and deploy custom AI solutions.</p>
+        </div>
+        <div class="col-md-4">
+        <h3>Collin Paran</h3>
+        <p><b>Founder & A.I. Solutions Architect</b></p>
+        <p>Collin Paran is a seasoned professional with two decades of experience in web application delivery. His extensive background includes roles as a Senior Data Scientist and Manager in two Fortune 500 companies, where he demonstrated his ability to lead and innovate. Since 2014, Collin has been at the forefront of chat application development, and from 2016, he has specialized in building AI-based chat applications, showcasing his proficiency in integrating artificial intelligence with user-friendly interfaces. His expertise doesn't stop there; Collin also holds a deep understanding of Applied Mathematics and Advanced Statistics, which underpins his data-driven approach to problem-solving.</p>
+        </div>
+        <div class="col-md-4">
+        <h3>Mark Flint</h3>
+        <p><b>Founder & Chief Financial Officer</b></p>
+        <p>With over 10 years in the financial sector, Mark Flint brings a wealth of expertise to our startup, honed from owning his accounting firm and earning his stripes as a Certified Public Accountant (CPA). His previous engagements as a virtual CFO for multiple companies underscore his versatile financial acumen. Mark's entrepreneurial spirit and strategic approach promise robust financial leadership, steering our venture towards sustainable success. </p>
+        </div>
+        <div class="col-md-4">
+        <h3>Chris Woolley</h3>
+        <p><b>Founder & Chief Legal Officer</b></p>
+        <p>Chris Woolley is a seasoned Senior Data and Systems Engineer with a rich background in the aerospace industry and federal contracting space. With over seven years of experience in the aviation industry, Chris has honed his skills in the testing, analysis, and implementation of both manned and unmanned aircraft systems. Since 2020, he has been instrumental in building data pipelines for supervised and unsupervised models, demonstrating his proficiency in advanced data engineering. Beyond his technical expertise, Chris is also a certified lawyer, a member of the Virginia Bar, which adds a unique perspective to his problem-solving approach. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Us -->
+  <section class="parallax"  id="contact">
+    <div class="container section section-white">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Contact Us</h2>
+            <a href="mailto:contact@professai.com?subject=Website%20Inquiry">contact@professai.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+
+
+
